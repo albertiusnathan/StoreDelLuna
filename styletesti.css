@@ -1,0 +1,206 @@
+header{
+    background-color: #8fa5d1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+}
+
+.logo-web img{
+    display: flex;
+    justify-content: left;
+    width: 7vw;
+    height: 14vh;
+}
+
+.web-name a{
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 35px;
+    font-family: 'Segoe UI';
+    padding-right: 40vw;
+}
+
+.registBtn img{
+    width: 14vw;
+    height: 9vh;
+}
+
+.title-header{
+    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+}
+
+.line-border{
+    display: flex;
+    justify-content: center;
+    width: 260px;
+    height: 5px;
+    background: #4E8098;
+    margin: 28px auto;
+}
+
+.test{
+    text-align: center;
+    padding: 30px;
+    background: #BCEDF6;
+    border-radius: 20px;
+}
+
+.img1{
+    width: 15vw;
+    height: 15vw;
+    background-image: url("assets/testimonials/person1.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    margin-inline: 75px;
+}
+
+.img2{
+    width: 15vw;
+    height: 15vw;
+    background-image: url("assets/testimonials/person2.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    margin-inline: 75px;
+}
+
+.img3{
+    width: 15vw;
+    height: 15vw;
+    background-image: url("assets/testimonials/person3.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    margin-inline: 75px;
+}
+
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.collumn{
+    flex: 30%;
+    max-width: 30%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.test img{
+    width: 100px;
+    height: 100px;
+}
+
+footer{
+    background-color: #8fa5d1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    padding-top: 2vh;
+    font-family: 'Segoe UI';
+}
+
+h3{
+    margin : 0;
+}
+
+h4{
+    margin : 0;
+    margin-bottom: 2vw;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .logo-web img{
+        width: 10vmax;
+        height: 10vmax;
+        
+    }
+  
+    .web-name a{
+        font-size: 20px;
+        padding-right: 15vmax;
+    }
+  
+    .registBtn img{
+        width: 16vmax;
+        height: 5vmax;
+    }
+
+    .title-header{
+        padding-top: 1vh;
+    }
+    
+    .line-border{
+        width: 50vmax;
+        margin: 20px auto;
+    }
+    
+    .test{
+        padding: 30px;
+        border-radius: 20px;
+    }
+    
+    .img1{
+        width: 15vw;
+        height: 15vw;
+        border-radius: 50%;
+        margin-inline: 75px;
+    }
+    
+    .img2{
+        width: 15vw;
+        height: 15vw;
+        border-radius: 50%;
+        margin-inline: 75px;
+    }
+    
+    .img3{
+        width: 15vw;
+        height: 15vw;
+        border-radius: 50%;
+        margin-inline: 75px;
+    }
+    
+    .name{
+        font-size: 15px;
+        margin: 10px;
+    }
+    
+    .collumn{
+        flex: 30%;
+        max-width: 60%;
+        padding: 15px;
+    }
+
+    footer{
+        margin-top: 30vmax;
+        padding-top: 2vh;
+      }
+    
+      h3{
+        font-size: 80%;
+        margin : 0;
+      }
+    
+      h4{
+        font-size: 80%;
+        margin : 0;
+        margin-bottom: 2vw;
+      }
+}

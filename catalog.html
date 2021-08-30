@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+    <header>
+        <div class="logo-web">
+            <img src="assets/Logo Store del Luna/Logo Store Del Luna.png" alt="">
+        </div>
+
+        <div class="web-name">
+            <a href="index.html">
+                <b>Welcome to Store Del Luna</b>
+            </a>
+        </div>
+            
+        <div class="registBtn">
+            <a href="register.html">
+                <img src="assets/registBtnn.png" alt="">
+            </a>
+           
+        </div>
+    </header>
+
+    <div class="content-area">
+        <div class="category-box" id="category-box">
+            <div class="category-title">
+                <b>Item Categories</b> <br>
+            </div>
+           
+            <div class="garis">
+            </div>
+            
+            <div class="albumChecks">
+                <label><input type="checkbox" rel="all-items" onchange="execCategorizer()">
+                    Show All Items <br>
+                </label>
+
+                <label><input type="checkbox" rel="blackpink" onchange="execCategorizer()">
+                    Black Pink <br>
+                </label>
+
+                <label><input type="checkbox" rel="bts" onchange="execCategorizer()">
+                    BTS <br>
+                </label>
+
+                <label><input type="checkbox" rel="seventeen" onchange="execCategorizer()">
+                    Seventeen <br>
+                </label>
+            </div>
+        </div>
+
+        <div class="displayed-items">
+            <div class="items blackpink all-items">
+                <a href="">
+                    <img src="assets/albums/Black_Pink_-_Square_Up_artwork.png" alt="">
+                    <h3>Square Up</h3>
+                    <h4>Black Pink</h4>
+                    <h5>IDR 599,999.99</h5>
+                </a>
+                
+            </div>
+                
+            <div class="items blackpink all-items">
+                <a href="">
+                    <img src="assets/albums/BLACKPINK-_The_Album.png" alt="">
+                    <h3>The Album</h3>
+                    <h4>Black Pink</h4>
+                    <h5>IDR 759,999.99</h5>
+                </a>
+                
+            </div>
+                
+            <div class="items seventeen all-items">
+                <a href="">
+                    <img src="assets/albums/Seventeen_-_Semicolon.png" alt="">
+                    <h3>Semicolon</h3>
+                    <h4>Seventeen</h4>
+                    <h5>IDR 399,999.99</h5>
+                </a>
+            </div>
+
+            <div class="items bts all-items">
+                <a href="">
+                    <img src="assets/albums/BTS_-_Map_of_the_Soul_Persona.png" alt="">
+                    <h3>Map of the Soul Persona</h3>
+                    <h4>BTS</h4>
+                    <h5>IDR 1,999,999.99</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="catalog.js"></script>
+
+    <footer>
+        <h3>Store Del Luna</h3>
+        <h4>Made by Group 4 - PR01</h4>
+     </footer> 
+</body>
+</html>

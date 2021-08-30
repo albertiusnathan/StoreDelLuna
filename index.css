@@ -1,0 +1,362 @@
+header{
+    background-color: #8fa5d1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+}
+
+.content-area{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+.logo-web img{
+    width: 7vw;
+    height: 14vh;
+    
+}
+
+.web-name a{
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 35px;
+    font-family: 'Segoe UI';
+    padding-right: 40vw;
+}
+
+.registBtn img{
+    width: 14vw;
+    height: 9vh;
+}
+
+
+.drop-down{
+    border-radius: 15px;
+    margin: 10px;
+    
+}
+
+.dropBtn{
+    background-color: #88a5e2;
+    color: white;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 25px;
+    min-width: 200px;
+    max-width: 200px;
+    padding : 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+
+.drop-content{
+    display: none;
+    position: absolute;
+    border-radius: 15px;
+    background-color: #88a5e2;
+    min-width: 200px;
+    max-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.drop-content a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 25px;
+    padding : 15px 15px;
+    border: none;
+    border-radius: 15px;
+    display: block;
+}
+
+.drop-content a:hover{background-color: #8fa5d1;}
+
+.drop-down:hover .drop-content{display: block;}
+
+.drop-down:hover .dropBtn {background-color: #8fa5d1;}
+
+.hot-product{
+    align-items: center;
+}
+
+.hot-product h2{
+    font-family: 'Segoe UI';
+    background-color: white;
+    font-weight: normal;
+}
+
+*{box-sizing:border-box}
+
+.carousel-box {
+    max-width: 300px;
+    min-width: 300px;
+    position: relative;
+    margin: auto;
+}
+
+.slideList {
+  display: none;
+}
+
+.slideList img{
+    vertical-align: middle;
+}
+
+/* prev Button and next button*/  
+.prevBtn, .nextBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextBtn {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevBtn:hover, .nextBtn:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.productText {
+  color: #f2f2f2;
+  background-color: black;
+  font-family: 'Segoe UI';
+  font-style: italic;
+  opacity: 80%;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.slideNums {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dotIndicator {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dotIndicator:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fadeFX {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}   
+
+.about-us{
+    border-radius: 25px;
+    background-color: #88a5e2;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    margin: 10px;
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+
+footer{
+    background-color: #8fa5d1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    padding-top: 2vh;
+    font-family: 'Segoe UI';
+}
+
+h3{
+    margin : 0;
+}
+
+h4{
+    margin : 0;
+    margin-bottom: 2vw;
+}
+
+
+
+
+
+
+/*set klo width 600px*/
+@media screen and (max-width: 600px){
+  .logo-web img{
+      width: 10vmax;
+      height: 10vmax;
+      
+  }
+
+  .web-name a{
+      font-size: 20px;
+      padding-right: 15vmax;
+  }
+
+  .registBtn img{
+      width: 16vmax;
+      height: 5vmax;
+  }
+
+  .drop-down{
+      border-radius: 15px;
+      margin: 10px;
+      
+  }
+
+  .dropBtn{
+      font-size: 100%;
+      max-width: 15vmax;
+      min-width: 15vmax;
+      padding : 1.5vmax;
+      border-radius: 10%;
+  }
+
+  .drop-content{
+      border-radius: 10%;
+      max-width: 15vmax;
+      min-width: 15vmax;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+
+  .drop-content a{
+      font-size: 65%;
+      padding : 15px 15px;
+      border-radius: 10%;
+  }
+
+  .slideList{
+    max-width: 30vmax;
+    max-height: 30vmax;
+  }
+
+  .hot-product h2{
+    font-size: 70%;
+  }
+
+  .carousel-box{ 
+    max-width: 30vmax;
+    min-width: 30vmax;
+  } 
+
+  .carousel-box img{ 
+    max-width: 30vmax;
+    min-width: 30vmax;
+  } 
+ 
+  .prevBtn, .nextBtn {
+    top: 50%;
+    margin-top: -22px;
+    padding: 16px;
+    font-size: 10px;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .nextBtn {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .productText {
+    opacity: 80%;
+    font-size: 10px;
+    padding: 8px 12px;
+    bottom: 1px;
+    width: 30vmax;
+  }
+
+  .slideNums {
+    font-size: 10px;
+    padding: 4px 6x;
+    top: 0;
+  }
+
+  .dotIndicator {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+  }  
+
+  .about-us{
+      border-radius: 25px;
+      font-size: 85%;
+      margin: 1.5vmax;
+      padding-left: 1.5vmax; 
+      padding-right: 1.5vmax;
+  }
+
+
+  footer{
+    margin-top: 30vmax;
+    padding-top: 2vh;
+  }
+
+  h3{
+    font-size: 80%;
+    margin : 0;
+  }
+
+  h4{
+    font-size: 80%;
+    margin : 0;
+    margin-bottom: 2vw;
+  }
+}

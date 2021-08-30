@@ -1,0 +1,245 @@
+header{
+    background-color: #8fa5d1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+}
+
+.logo-web img{
+    width: 7vw;
+    height: 14vh;
+    
+}
+
+.web-name a{
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 35px;
+    font-family: 'Segoe UI';
+    padding-right: 40vw;
+}
+
+.registBtn img{
+    width: 14vw;
+    height: 9vh;
+}
+
+.content-area{
+    margin: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    flex-direction: row;
+    max-width: 15 00px;
+}
+
+.category-box{
+    color: black;
+    font-family: 'Segoe UI';
+    text-decoration: none;
+    background-color: #88a5e2;
+    display: block;
+    align-items: left;
+    padding: 2vw;
+    margin: 1vw;
+    border-radius: 20%;
+}
+
+.category-title{
+    font-size: 20px;
+    text-align: center;
+}
+
+.garis{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 3px;
+    border-radius: 25px;
+    background: black;
+    margin: 10px auto;
+}
+
+.show{
+    display: block;
+}
+
+.displayed-items{
+    overflow: hidden;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items a{
+    text-decoration: none;
+    color: black;
+}
+
+.items{
+    background-color: lightskyblue;
+    border-color: cornflowerblue;
+    border-style: dashed;
+    border-radius: 12.5%;
+    margin: 5px 5px;
+    display: none;    
+}
+
+.items img{
+    width: 300px;
+    height: 300px;
+    padding: 1vw;
+    border-radius: 15%;
+}
+
+.items h3{
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-style: oblique;
+    margin: 0;
+    padding: 0;
+}
+
+.items h4{
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-style: oblique;
+    font-weight: lighter;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.items h5{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-style: oblique;
+    font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+footer{
+    background-color: #8fa5d1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    padding-top: 2vh;
+    font-family: 'Segoe UI';
+}
+
+.footer h3{
+    margin : 0;
+}
+
+.footer h4{
+    margin : 0;
+    margin-bottom: 2vw;
+}
+
+@media screen and (max-width:600px) {
+    .logo-web img{
+        width: 10vmax;
+        height: 10vmax;
+        
+    }
+  
+    .web-name a{
+        font-size: 20px;
+        padding-right: 15vmax;
+    }
+  
+    .registBtn img{
+        width: 16vmax;
+        height: 5vmax;
+    }
+    
+    .content-area{
+        margin: 10px;
+        max-width: 1000px;
+        
+    }
+    
+    .category-box{
+        padding: 2vw;
+        margin: 2vw;
+        border-radius: 20%;
+        max-height: 22vmax;
+        min-height: 22vmax;
+        max-width: 16vmax;
+        min-width: 16vmax;
+    }
+    
+    .category-title{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .albumChecks label{
+        font-size: 12px;
+    }
+    
+    .garis{
+        width: 100px;
+        height: 2px;
+        border-radius: 25px;
+        margin: 5px auto;
+    }
+    
+    .items{
+        border-radius: 12.5%;
+        margin: 2px 2px;   
+    }
+    
+    .items img{
+        width: 150px;
+        height: 150px;
+        padding: 1vw;
+        border-radius: 15%;
+    }
+    
+    .items h3{
+        font-size: 60%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .items h4{
+        font-size: 60%;
+        margin-top: 1px;
+        margin-bottom: 2px;
+        padding: 0;
+    }
+    
+    .items h5{
+        font-size: 12px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    
+    footer{
+        margin-top: 30vmax;
+        padding-top: 2vh;
+      }
+    
+    footer h3{
+        font-size: 80%;
+        margin : 0;
+      }
+    
+    footer h4{
+        font-size: 80%;
+        margin : 0;
+        margin-bottom: 2vw;
+      }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleregist.css">
+    <script src="regist.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-web">
+            <img src="assets/Logo Store del Luna/Logo Store Del Luna.png" alt="">
+        </div>
+
+        <div class="web-name">
+            <a href="index.html">
+                <b>Welcome to Store Del Luna</b>
+            </a>
+        </div>
+            
+        <div class="registBtn">
+            <a href="register.html">
+                <img src="assets/registBtnn.png" alt="">
+            </a>
+           
+        </div>
+    </header>
+    <div class="content">
+        <div class="ctitle">
+            <h1>REGISTRATION</h1>
+        </div>
+        <div class="form">
+            <input type="text" class="inputbox" id="unametxt" placeholder="Username" required>
+            <br>
+            <input type="text" class="inputbox" id="fullnametxt" placeholder="Fullname" required>
+            <br>
+            <input type="password" class="inputbox" id="passtxt" placeholder="Password" required>
+            <br>
+            <input type="password" class="inputbox" id="confirmpass" placeholder="Confirm Password" required>
+            <br>
+           
+            <div class="radio">
+                <label for="">Gender : </label>
+                <input type="radio" name="genderbtn" id="malegen" value="Male">Male
+                <input type="radio" name="genderbtn" id="femalegen" value="Female">Female
+            </div>
+
+            <br>
+            <input type="text" class="inputbox" id="emailtxt" placeholder="Email" required>
+            <br>
+            <input type="number" class="inputbox" id="agenum" placeholder="Age" required>
+            <br>
+            <div class="checkterm">
+                <input type="checkbox" id="checkagree">I agree with terms and conditions.
+            </div>
+            <br>
+            <div class="submitbtn">
+                <button id="subbtn" onclick="validateinput()">
+                    Register
+                </button>
+               
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+<footer>
+    <h3>Store Del Luna</h3>
+    <h4>Made by Group 4 - PR01</h4>
+ </footer>
+
+</html>
